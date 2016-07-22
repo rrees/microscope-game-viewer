@@ -5,6 +5,7 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 const enforce = require('express-sslify');
+const hsts = require('hsts');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
@@ -14,7 +15,10 @@ var app = express();
 /**
  * Enforce SSL
  */
-app.use(enforce.HTTPS({ trustProtoHeader: true }));
+if("production" === (process.env.NODE_ENV || "development")) {
+    app.use(enforce.HTTPS({ trustProtoHeader: true }));
+    app.use(hsts());
+}
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
