@@ -4,6 +4,7 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+const enforce = require('express-sslify');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
@@ -24,6 +25,12 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
 app.use('/users', users);
+
+/**
+ * Enforce SSL
+ */
+app.use(enforce.HTTPS({ trustProtoHeader: true }))
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
