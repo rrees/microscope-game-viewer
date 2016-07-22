@@ -19,7 +19,7 @@ app.set('port', port);
 /**
  * Enforce SSL
  */
-app.use(enforce.HTTPS());
+app.use(enforce.HTTPS({ trustProtoHeader: true }))
 
 /**
  * Create HTTP server.
