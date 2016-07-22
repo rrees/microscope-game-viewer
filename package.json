@@ -2,6 +2,9 @@
   "name": "microscope-game-viewer",
   "version": "0.0.0",
   "private": true,
+  "engines": {
+      "node": "6.x"
+  },
   "scripts": {
     "start": "node ./bin/www",
     "reloader": "node_modules/.bin/nodemon ./bin/www"
