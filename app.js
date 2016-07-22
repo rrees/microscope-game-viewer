@@ -17,7 +17,9 @@ var app = express();
  */
 if("production" === (process.env.NODE_ENV || "development")) {
     app.use(enforce.HTTPS({ trustProtoHeader: true }));
-    app.use(hsts());
+
+    const maxAge = 7776000000;
+    app.use(hsts({maxAge: maxAge}));
 }
 
 // view engine setup
