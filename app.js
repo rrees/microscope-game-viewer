@@ -18,7 +18,7 @@ var app = express();
 if("production" === (process.env.NODE_ENV || "development")) {
     app.use(enforce.HTTPS({ trustProtoHeader: true }));
 
-    const maxAge = 7776000000;
+    const maxAge = 10886400; // 18 weeks
     app.use(hsts({maxAge: maxAge, force: true}));
 }
 
