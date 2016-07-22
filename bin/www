@@ -7,13 +7,21 @@
 var app = require('../app');
 var debug = require('debug')('microscope-game-viewer:server');
 var http = require('http');
+const express_enforces_ssl = require('express-enforces-ssl');
 
 /**
  * Get port from environment and store in Express.
  */
 
-var port = normalizePort(process.env.PORT || '3000');
+const port = normalizePort(process.env.PORT || '3000');
 app.set('port', port);
+
+/**
+ * Enforce SSL
+ */
+
+app.enable('trust proxy');
+app.use(express_enforces_ssl());
 
 /**
  * Create HTTP server.
