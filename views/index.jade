@@ -3,3 +3,9 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+
+  p= games.length
+
+  ol
+    each game in games
+      li: a(href="/games/#{game.slug}") #{game.name}
