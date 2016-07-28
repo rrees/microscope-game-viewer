@@ -77,6 +77,17 @@ const theMagicDies = {
 					tone: "dark"
 				}
 			]
+		},
+		{
+			name: "A skyscraper is built on the demolished remains",
+			tone: "dark",
+			scenes: [
+				{
+					question: "What happens to the sign?",
+					answer: "It travels back to the beginning of the story",
+					tone: "light"
+				}
+			]
 		}
 	]
 };
