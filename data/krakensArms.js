@@ -53,6 +53,27 @@ const theGreatDivide = {
 		{
 			name: "Black-Tooth Jack meets Sir Fairchild Humphries",
 			tone: "light"
+		},
+		{
+			name: "Two magicians split into different kabals after an argument",
+			tone: "dark",
+			scenes: [
+				{
+					question: "What was the argument?",
+					answer: "The inheritence of the Undivided Circle",
+					tone: "dark"
+				}
+			]
+		},
+		{
+			name: "The trial of Blacktoothed Jack",
+			tone: "dark",
+			scenes: [
+				{
+					question: "Who led the Revolt of the Roses?",
+					answer: "No-one"
+				}
+			]
 		}
 	]
 };
