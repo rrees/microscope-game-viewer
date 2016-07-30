@@ -10,6 +10,8 @@ const hsts = require('hsts');
 var routes = require('./routes/index');
 var users = require('./routes/users');
 
+const gameRoutes = require('./routes/games');
+
 var app = express();
 
 /**
@@ -36,6 +38,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
 app.use('/users', users);
+app.use('/games', gameRoutes);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
