@@ -113,11 +113,87 @@ const theMagicDies = {
 	]
 };
 
+const foundingOfVegas = {
+	name: "Founding of the Society of Vegas",
+	tone: "light",
+	chronicle: {
+		focusCharacter: {
+			name: "Falmouth the Fantastic",
+			description: "Naturally gifted at magic, astonshingly charismatic"
+		},
+	},
+	events: [
+		{
+			name: "The portentious birth of Falmouth",
+			tone: "light",
+			scenes: [
+				{
+					question: "What dark force does this anger?",
+					answer: "All of them",
+					tone: "dark"
+				}
+			]
+		},
+		{
+			name: "The seer stone is destroyed",
+			tone: "light",
+			scenes: [
+				{
+					question: "Who decides to destroy the stone and why?",
+					answer: "The djinn because the Seer of the Stone was being corrupted by it",
+					tone: "dark"
+				}
+			]
+		},
+		{
+			name: "The destruction of the Yoke of Woe",
+			tone: "light"
+		}
+	]
+};
+
+const theCityFounded = {
+	name: "The city is founded",
+	tone: "dark",
+	chronicle: {
+		focusCharacter: {
+			name: "Mayor Janet Fairchild-Humphries"
+		}
+	},
+	events: [
+		{
+			name: "The corruption of Janet Fairchild-Humphries",
+			tone: "dark",
+			scenes: [
+				{
+					question: "Who corrupts Janet?",
+					answer: "Janet was corrupted by her own lust for power",
+					tone: "dark"
+				}
+			]
+		},
+		{
+			name: "The booze goes on strike",
+			tone: "light"
+		},
+		{
+			name: "The city council form the Cult of Shoggoth",
+			tone: "dark"
+		},
+		{
+			name: "The leader of the Cult of Shoggoth is assassinated",
+			tone: "dark"
+		}
+	]
+};
+
 const gameData = {
 	periods: [
 		theSignIsRaised,
 		theGreatDivide,
-		theMagicDies
+		theMagicDies,
+		foundingOfVegas,
+		theCityFounded
 	]
 };
 
