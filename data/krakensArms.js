@@ -187,13 +187,42 @@ const theCityFounded = {
 	]
 };
 
+const theDragonSummoned = {
+	name: "The dragon is summoned",
+	tone: "dark",
+	chronicle: {
+		focusCharacter: {
+			name: "Karlock the mad dragon"
+		}
+	},
+	events: [
+		{
+			name: "The Brothers of Tomorrow murder Karlok's child",
+			tone: "dark"
+		},
+		{
+			name: "The booze is boiled in its casks by dragon flames",
+			tone: "dark"
+		},
+		{
+			name: "Karlok burns the Arms to the ground",
+			tone: "dark"
+		},
+		{
+			name: "The last of the Society of Vegas sacrifice themselves to banish Karlok",
+			tone: "light"
+		}
+	]
+}
+
 const gameData = {
 	periods: [
 		theSignIsRaised,
 		theGreatDivide,
 		theMagicDies,
 		foundingOfVegas,
-		theCityFounded
+		theCityFounded,
+		theDragonSummoned
 	]
 };
 
