@@ -226,4 +226,4 @@ const gameData = {
 	]
 };
 
-module.export = gameData;
+module.exports = gameData;

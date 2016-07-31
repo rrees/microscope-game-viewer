@@ -3,4 +3,7 @@ extends layout
 block content
 	h1= gameData.name
 
-	p= gameId
+	each period in gameData.data.periods
+		section
+			header
+				h1= period.name
