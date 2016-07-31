@@ -20,6 +20,12 @@ const gamesList = [
 			"Cult of Shoggoth",
 			"The Undivided Circle"
 		]
+	},
+	{
+		slug: "blood-souls",
+		name: "Blood Souls of the Ancients",
+		type: "Microscope",
+		data: {}
 	}
 ];
 
