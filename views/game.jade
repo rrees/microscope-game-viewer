@@ -6,4 +6,9 @@ block content
 	each period in gameData.data.periods
 		section
 			header
-				h1= period.name
+				h2= period.name
+
+			each event in period.events
+				div
+					header
+						h3= event.name
