@@ -8,6 +8,8 @@ router.get('/:gameId', function(req, res, next) {
 
 	const gameData = gamedata.find((game) => gameId === game.slug);
 
+	//console.log(gameData);
+
 	const templateData = {
 		gameId: gameId,
 		title: gameData.name,
