@@ -1,4 +1,5 @@
 const krakensArms = require('./krakensArms');
+const bloodSouls = require('./bloodSouls');
 
 const gamesList = [
 	{
@@ -25,15 +26,7 @@ const gamesList = [
 		slug: "blood-souls",
 		name: "Blood Souls of the Ancients",
 		type: "Microscope",
-		data: {
-			periods: [
-				{
-					name: "The Great Sundering",
-					description: "Moon Fell seperates from Agire",
-					tone: "light"
-				}
-			]
-		}
+		data:  bloodSouls
 	}
 ];
 

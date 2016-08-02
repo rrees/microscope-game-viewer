@@ -26,12 +26,6 @@ const theSignIsRaised = {
 					answer: "The leaders of the Undivided Circle",
 					description: "Optional",
 					tone: "light",
-					characters: [
-						{
-							name: "Blah",
-							description: "Optional"
-						}
-					],
 					exclusions: []
 				}
 			]
