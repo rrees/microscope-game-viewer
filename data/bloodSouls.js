@@ -97,6 +97,43 @@ const gameData = {
 							]
 						}
 					]
+				},
+				{
+					name: "The Golden Years",
+					tone: "light"
+				},
+				{
+					name: "The Rose Age",
+					tone: "dark",
+					events: [
+						{
+							name: "The Kings Balls",
+							tone: "light"
+						},
+						{
+							name: "Descent into hedonism",
+							tone: "dark"
+						}
+					]
+				},
+				{
+					name: "The Deathless Year",
+					description: "Apocalypse storms",
+					tone: "dark",
+					events: [
+						{
+							name: "The cult of the Serene Stars start using death magic",
+							tone: "dark"
+						},
+						{
+							name: "Geasea created",
+							tone: "dark"
+						},
+						{
+							name: "People choose to become undead",
+							tone: "dark"
+						}
+					]
 				}
 			]
 		}
