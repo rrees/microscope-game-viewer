@@ -134,6 +134,79 @@ const gameData = {
 							tone: "dark"
 						}
 					]
+				},
+				{
+					name: "The hero ends the zombie plague",
+					tone: "light",
+					events: [
+						{
+							name: "The hero finds Mageti's journal",
+							tone: "light"
+						},
+						{
+							name: "The hero is bonded to the Thorns of Denivici",
+							tone: "dark"
+						},
+						{
+							name: "The hero allies with Garalon the Blackest Black",
+							tone: "light",
+							scenes: [
+								{
+									question: "How does the hero overpower Garalon?",
+									answer: "Using Frederic's soul to weaken Garalon before binding his soul",
+									tone: "light",
+									characters: [
+										{
+											name: "Garalon"
+										},
+										{
+											name: "Hero"
+										},
+										{
+											name: "Zombie Garrion Vultore companion, Justicar"
+										}
+									]
+								}
+							]
+						},
+						{
+							name: "The hero romances Hengé",
+							tone: "dark"
+						},
+						{
+							name: "Geasea agrees to help the hero if they can give her true life",
+							tone: "light"
+						},
+						{
+							name: "Hero steps through the Gamer Gate and ends up in the Graveyard of Giants",
+							description: "Actions moves from Moonwell to Agire",
+							tone: "light"
+						},
+						{
+							name: "The hero seduces Soys the Bloody",
+							tone: "dark"
+						},
+						{
+							name: "The hero tears the Black Fire from the Thin White Duke",
+							tone: "light",
+							scenes: [
+								{
+									question: "What does the Thin White Count day to the hero after being defeated?",
+									answer: "What will you do with the Black Fire now?",
+									tone: "light",
+									location: "The ruined room in front of the dias within the tower",
+									characters: [
+										{
+											name: "Thin White Count"
+										},
+										{
+											name: "Hero"
+										}
+									]
+								}
+							]
+						}
+					]
 				}
 			]
 		}
