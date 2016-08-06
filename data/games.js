@@ -9,7 +9,9 @@ const gamesList = [
 		data: krakensArms,
 		palette: {
 			include: [],
-			exclude: []
+			exclude: [
+				"Magical minors"
+			]
 		},
 		focuses: [
 			"Origin stories",

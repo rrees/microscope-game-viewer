@@ -3,6 +3,8 @@ extends layout
 block content
 	h1= gameData.name
 
+	include ./includes/details.jade
+
 	each period in gameData.data.periods
 		section
 			header
