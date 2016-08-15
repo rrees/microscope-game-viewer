@@ -1,21 +1,22 @@
 
-h2 Details
+details
+	summary Details
 
-if gameData.description
+	if gameData.description
 
-p= gameData.description
+	p= gameData.description
 
-if gameData.palette
-	h3 Palette
+	if gameData.palette
+		h2 Palette
 
-	if gameData.palette.include && gameData.palette.include.length > 0
-		h4 Include
-		ul
-			each item in gameData.palette.include
-				li= item
+		if gameData.palette.include && gameData.palette.include.length > 0
+			h3 Include
+			ul
+				each item in gameData.palette.include
+					li= item
 
-	if gameData.palette.exclude && gameData.palette.exclude.length > 0
-		h4 Exclude
-		ul
-			each item in gameData.palette.exclude
-				li= item
+		if gameData.palette.exclude && gameData.palette.exclude.length > 0
+			h3 Exclude
+			ul
+				each item in gameData.palette.exclude
+					li= item

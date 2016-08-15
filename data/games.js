@@ -28,6 +28,20 @@ const gamesList = [
 		slug: "blood-souls",
 		name: "Blood Souls of the Ancients",
 		type: "Microscope",
+		description: "A computer game is due to launch and none of the game lore has been written... Microscope to the rescue!",
+		palette: {
+			include: [
+				"Deep philosophy",
+				"Big bosses with weaknesses",
+				"Renaissance aesthetics",
+				"Crafted power-ups"
+			],
+			exclude: [
+				"Easy magic",
+				"Non-necromatic monsters",
+				"Traditional weapons and armour"
+			]
+		},
 		data:  bloodSouls
 	}
 ];
